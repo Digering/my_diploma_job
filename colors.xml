@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="font_proramm_DayNight">#141414</color>
+    <color name="gray">#7C7C7C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="activity_Buttom">#0040E5</color>
+    <color name="Error">#E5001B</color>
+    <color name="system_Bottom_text_DayNight">#d5d6d9</color>
+    <color name="system_Bottom_text_Light">#2B2B2C</color>
+    <color name="system_Bottom_fon_DayNight">#2F2F2F</color>
+    <color name="system_Bottom_fon_DayNight_vibor">#525252</color>
+    <color name="system_dictionary">#2454CA</color>
+    <color name="Text_about_button">#8b8f93</color>
+    <color name="system_Bottom_fon_Light">#ffffff</color>
+    <color name="font_proramm_Light">#f0eff5</color>
+</resources>

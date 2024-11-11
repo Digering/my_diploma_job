@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.English_4" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/system_Bottom_fon_Light</item>
+        <item name="colorPrimaryVariant">@color/font_proramm_Light</item>
+        <item name="colorOnPrimary">@color/system_Bottom_text_Light</item>
+    </style>
+
+    <style name="Theme.English_4" parent="Base.Theme.English_4" />
+</resources>
