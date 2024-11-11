@@ -1,0 +1,17 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+
+    <!-- Сдвиг влево -->
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="200%"
+        android:duration="500"/>
+
+    <!-- Наклон -->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="30"
+        android:pivotX="50%"
+        android:pivotY="200%"
+        android:duration="500"/>
+</set>
