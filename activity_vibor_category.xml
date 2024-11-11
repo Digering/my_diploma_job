@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViborCategory">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp">
+
+                <ImageButton
+                    android:id="@+id/backbottom"
+                    android:layout_width="40dp"
+                    android:layout_height="18dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="backbottom"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/back" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Выберите категории"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ButtonListUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ButtonList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nestedScrollView"
+        tools:layout_editor_absoluteX="-3dp"
+        android:background="@drawable/radius_top"
+        android:backgroundTint="@color/gray">
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:onClick="buttonOk"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

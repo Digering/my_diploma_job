@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="80dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/main_func"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Основные функции"
+                    android:textColor="@color/Text_about_button"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/communicate2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/radius_top"
+                    android:text="Категории"
+                    android:onClick="Categori_vibor_name"
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="1dp"
+                    android:background="@drawable/ripple_effect"
+                    android:text="Учить новые слова"
+                    android:onClick="Learn_Word"
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/radius_bottom"
+                    android:text="Повторить слова"
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/additionally_func"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Дополнительные функции"
+                    android:textColor="@color/Text_about_button"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/flipping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/radius_top"
+                    android:text="Пролистать слова"
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/communicate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="1dp"
+                    android:background="@drawable/ripple_effect"
+                    android:text="Общаться"
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/read"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="1dp"
+                    android:background="@drawable/ripple_effect"
+                    android:text="Читать"
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/video_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/radius_bottom"
+                    android:text="Видеоплеер"
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

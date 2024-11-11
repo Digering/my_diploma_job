@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Словарь"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="30dp">
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_button"
+                            android:textAllCaps="false" />
+
+                        <EditText
+                            android:id="@+id/poisk_word"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:hint="Найти слово"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:layout_marginHorizontal="40dp"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/poisc_word"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/usercat"
+                style="@style/MyCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <LinearLayout
+                    android:id="@+id/usercategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="2px">
+
+                    <Button
+                        android:id="@+id/add_Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ripple_effect"
+                        android:gravity="start"
+                        android:onClick="add_category"
+                        android:text="Добавить категорию"
+                        android:textSize="16dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <FrameLayout
+                        android:id="@+id/editcartegory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/system_Bottom_fon_DayNight"
+                        android:layout_marginTop="2px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/addcategory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="40dp"
+                                android:gravity="center"
+                                android:inputType="text"
+                                android:hint="Название категории" />
+
+                            <TextView
+                                android:id="@+id/errortext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Недопустимое название категории"
+                                android:textColor="@color/Error"
+                                android:textStyle="normal"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="10dp"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/button5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/activity_Buttom"
+                                    android:text="Отмена"
+                                    android:onClick="Close"/>
+
+                                <Button
+                                    android:id="@+id/button6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/activity_Buttom"
+                                    android:text="Принять"
+                                    android:onClick="Good"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ButtonListUsers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/systemcat"
+                style="@style/MyCardViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="#00FFFFFF">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ButtonList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/fonprogressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="160dp"
+        android:backgroundTint="#810F0F0F"
+        app:layout_constraintEnd_toEndOf="@+id/nestedScrollView2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_button">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

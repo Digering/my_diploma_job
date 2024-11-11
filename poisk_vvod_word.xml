@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/ripple_effect"
+        android:backgroundTint="@color/system_Bottom_fon_DayNight"
+        android:layout_marginVertical="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/poisc_name_en"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/poisc_transcription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/poisc_name_rus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageButton
+                    android:id="@+id/examples_list_prim"
+                    android:layout_width="20dp"
+                    android:layout_height="10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/scrit"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:id="@+id/poisc_examples"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Пример(ы)"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton_word"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/player" />
+
+        <LinearLayout
+            android:id="@+id/poisc_examples_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"></LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

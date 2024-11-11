@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuMain">
+
+    <FrameLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/radius_top"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButtonLearn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/learn"/>
+
+                <TextView
+                    android:id="@+id/TextLearn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Учить"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Category"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/list" />
+
+                <TextView
+                    android:id="@+id/TextList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Словарь"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButtonStats"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/statistic" />
+
+                <TextView
+                    android:id="@+id/TextStas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Статистика"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButtonSetting"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/setting"/>
+
+                <TextView
+                    android:id="@+id/TextSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Меню"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
