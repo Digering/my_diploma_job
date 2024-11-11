@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.English_4" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="colorPrimary">@color/system_Bottom_fon_DayNight</item>
+        <item name="colorPrimaryVariant">@color/font_proramm_DayNight</item>
+        <item name="colorOnPrimary">@color/system_Bottom_text_DayNight</item>
+    </style>
+</resources>
